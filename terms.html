@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Use and recovery conditions — Mini Nightly Backup</title><style>body{font:18px/1.6 system-ui;max-width:760px;margin:64px auto;padding:0 24px;color:#182126}</style><main>
+<h1>Use and recovery conditions</h1><p>Mini Nightly Backup is intended only for private operation by its account owner. It is not offered to other users as a public backup service.</p>
+<p>The utility captures file payloads and consistent individual SQLite database snapshots. It does not provide an atomic whole-application, browser LevelDB, or whole-machine image. Recovery limitations and any files that changed during capture are recorded in verification evidence.</p>
+<p>A failed or interrupted run is not a verified recovery point. Verification requires complete authenticated readback, manifest checks and actual representative file/database restores. A receipt reports the checks performed; it is not a guarantee that every application will restart correctly.</p>
+<p>Recovery requires access to the encrypted archive and the matching decryption identity. A password-encrypted recovery-key wrapper also requires its separately retained password. The owner must retain the required recovery material independently of the machine being protected.</p>
+<p>The operator must review capacity, retention and actual restore evidence before replacing source data. This utility does not automatically overwrite or restart the source applications.</p>
+<p><a href="index.html">About the utility</a> · <a href="privacy.html">Privacy notice</a></p>
+</main></html>
